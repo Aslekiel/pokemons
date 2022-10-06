@@ -36,7 +36,11 @@ export const Footer = () => {
           </p>
         </div>
       </div>
-      <div>{`Current screen width: ${screenWidth}`}</div>
+      <div
+        className="footer__screen-width"
+      >
+        {`Current screen width: ${screenWidth}`}
+      </div>
     </FooterContainer>
   );
 };

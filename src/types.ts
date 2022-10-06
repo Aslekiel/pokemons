@@ -1,5 +1,18 @@
-export type PokemonsType = {
-  pokemons: SinglePokemonType[] | null;
+export type PokemonsApiType = {
+  pokemons: SinglePokemonType[];
+  pagination: PaginationType;
+};
+
+export type PaginationType = {
+  count: number | null;
+  next: string | null;
+  previous: string | null;
+  results: PaginationResultsType[];
+};
+
+export type PaginationResultsType = {
+  name: string;
+  url: string;
 };
 
 export type SinglePokemonType = {
@@ -31,4 +44,9 @@ export type SpritesType = {
   front_female: string;
   front_shiny: string;
   front_shiny_female: string;
+};
+
+export type PaginationOptionsType = {
+  offset: number;
+  limit: number;
 };
