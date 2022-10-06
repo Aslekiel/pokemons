@@ -23,17 +23,27 @@ export type SinglePokemonType = {
   abilities: AbilitiesType[];
   sprites: SpritesType;
   base_experience: number;
+  stats: PokemonStatsType[];
 };
 
 export type AbilitiesType = {
   is_hidden: boolean;
   slot: number;
-  ability: SingleAbilityType[];
+  ability: AbilitiesArrayType;
 };
 
-export type SingleAbilityType = {
+export type AbilitiesArrayType = {
   name: string;
   url: string;
+};
+
+export type PokemonStatsType = {
+  base_stat: number;
+  stat: StateType;
+};
+
+export type StateType = {
+  name: string;
 };
 
 export type SpritesType = {

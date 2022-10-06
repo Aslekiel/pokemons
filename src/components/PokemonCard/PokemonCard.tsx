@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { pokemonApi } from '../../api/pokemonApi';
 import type { SinglePokemonType } from '../../types';
 import { PokemonCardContainer } from './PokemonCardContainer.styles';
@@ -24,11 +25,13 @@ export const PokemonCard: React.FC<PropsType> = ({ id }) => {
 
   return (
     <PokemonCardContainer>
-      <img
-        src={pokemonData?.sprites.front_default}
-        alt="pokemon-img"
-        className="pokemon__img"
-      />
+      <Link to={`/pokemon/${id}`}>
+        <img
+          src={pokemonData?.sprites.front_default}
+          alt="pokemon-img"
+          className="pokemon__img"
+        />
+      </Link>
       <div className="pokemon__info">
         <h2>{`Name: ${pokemonData?.name}`}</h2>
         <p>{`Weight: ${pokemonData?.weight}`}</p>
