@@ -22,6 +22,7 @@ export type SinglePokemonType = {
   weight: number;
   abilities: AbilitiesType[];
   sprites: SpritesType;
+  base_experience: number;
 };
 
 export type AbilitiesType = {

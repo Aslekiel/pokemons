@@ -9,4 +9,4 @@ const getPagination =
     return booksData;
   };
 
-export const pokemonsApi = { getPagination };
+export const paginationApi = { getPagination };

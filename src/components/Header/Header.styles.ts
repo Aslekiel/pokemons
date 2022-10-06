@@ -27,5 +27,9 @@ export const HeaderContainer = styled.header`
     align-items: center;
 
     width: 20%;
+
+    &_time {
+      padding-left: 10px;
+    }
   }
 `;

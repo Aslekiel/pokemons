@@ -6,10 +6,10 @@ export const FooterContainer = styled.footer`
   justify-content: space-between;
   align-items: center;
 
-  position: absolute;
+  /* position: absolute;
   left: 50%;
   bottom: 0;
-  transform: translate(-50%);
+  transform: translate(-50%); */
 
   background-color: ${(p) => p.theme.backgroundColor.main};
 
