@@ -12,10 +12,8 @@ export const Header = () => {
 
   useEffect(() => {
     const timer = setInterval(() => setCurrentDate(new Date()), 1000);
-    return function cleanup() {
-      clearInterval(timer);
-    };
-  });
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <HeaderContainer>
