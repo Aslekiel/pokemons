@@ -9,4 +9,9 @@ export default createGlobalStyle`
     font-size: 16px;
     line-height: 24px;
   }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+  }
 `;

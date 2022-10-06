@@ -6,8 +6,6 @@ type PropsType = {
 };
 
 export const Stats: React.FC<PropsType> = ({ stats }) => {
-  // eslint-disable-next-line no-console
-  console.log(stats);
   return (
     <StatsContainer>
       <h2>Pokemon stats</h2>

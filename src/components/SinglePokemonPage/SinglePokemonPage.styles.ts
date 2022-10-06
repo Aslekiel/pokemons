@@ -6,8 +6,9 @@ export const SinglePokemonPageCContainer = styled.div`
   align-items: center;
   
   max-width: 1290px;
-  width: 50%;
-
+  width: 60%;
+  height: 78vh;
+  
   margin: auto;
   padding: 20px 0;
 

@@ -6,8 +6,8 @@ import { PokemonsContainer } from './Pokemons.styles';
 export const Pokemons = () => {
   const [searchParams] = useSearchParams();
 
-  const page = searchParams.get('page');
-  const limit = searchParams.get('limit');
+  const page = searchParams.get('page') || 1;
+  const limit = searchParams.get('limit') || 20;
 
   const firstValue = useMemo(() => {
     return Number(limit) * (Number(page) - 1) + 1;

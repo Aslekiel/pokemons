@@ -16,9 +16,6 @@ const pokemons = createSlice({
   name: 'pokemons',
   initialState,
   reducers: {
-    // setPokemons(state, action: PayloadAction< | null>) {
-    //   // state.results = action.payload?.results;
-    // },
     setPagination(state, action: PayloadAction<PaginationType>) {
       state.pagination.results = action.payload.results;
     },
